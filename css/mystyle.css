@@ -1,0 +1,23 @@
+body{
+	font-family: 'Roboto', sans-serif;
+  background-color: red;
+}
+body::after{
+  opacity: 0.3;
+ 	top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+ }
+.jumbotron{
+	background: none;
+}
+h1{
+	font-weight: 700;
+	margin: 0;
+}

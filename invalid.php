@@ -1,3 +1,4 @@
+<!-- Showing error on Login-->
 <?php if (count($invalid) > 0): ?>
 	<div class="error">
 		<?php foreach ($invalid as $e): ?>

@@ -2,7 +2,11 @@
 <?php  
 	if(isset($_POST["id"])){  
 		$output = '';  
+<<<<<<< HEAD
 		$db = mysqli_connect("localhost", "user", "userpassword", "Phonebook");  
+=======
+		$db = mysqli_connect("localhost", "root", "", "Phonebook");  
+>>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 	  	$query = "SELECT * FROM users_account WHERE id = '".$_POST["id"]."'";  
 	  	$result = mysqli_query($db, $query);  
 

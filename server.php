@@ -1,8 +1,13 @@
 <?php 
 	session_start();
 	$dbserver	= 'localhost';
+<<<<<<< HEAD
 	$dbusername = 'user';
 	$dbpassword	= 'userpassword';
+=======
+	$dbusername = 'root';
+	$dbpassword	= '';
+>>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 	$dbDatabase	= 'Phonebook';
 	$error      = array();
 	$invalid	= array();
@@ -102,7 +107,10 @@
 		$result   = mysqli_query($db, $sql);
 		$row  =   mysqli_fetch_array($result);
   	}
+<<<<<<< HEAD
   
+=======
+>>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 
   	/* Updating existing data from database */
   	if(isset($_POST['update'])){

@@ -14,6 +14,11 @@
 		   			<h4><strong>Login here!</strong></h4>
 				</div>
 	 		</div>
+<<<<<<< HEAD
+=======
+	  		<!-- Link for error file -->
+	  		<?php include('invalid.php');?>
+>>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 	  		<!--Body-->
 	  		<form method="post" action="">
 				<div class="modal-body text-center mb-1">
@@ -50,19 +55,29 @@
 <!-- CSS for error -->
 <style>
 	.error{
+<<<<<<< HEAD
   		left: 0;
   		right: 0;
   		position: absolute;
 		margin-left: 100px;
 		width: 30%;
+=======
+		width: auto;
+>>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 		margin: 0px auto;
 		border: 1px solid #a94442;
 		color: #a94442;
 		background: #f2dede;
 		border-radius: 5px;
+<<<<<<< HEAD
 		font-size:15px;
 		padding-top: 12px;
 		padding-bottom: -5px;  
 
+=======
+		font-size:10px;
+		padding-top: 12px;
+		padding-bottom: -5px;  
+>>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 	}
 </style>

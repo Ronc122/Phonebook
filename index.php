@@ -28,8 +28,11 @@
 		<div class="container text-center" style="margin-top: 50px;">
 			<img src="images/phonebook.png" width="100" height="100" />
 			<h1 class="p-2 text-white">Phonebook</h2>
+<<<<<<< HEAD
 				<?php include('error.php'); ?>
 				<?php include('invalid.php'); ?>
+=======
+>>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 			<div style="margin-top: 120px;">				
 				<div class="button">
 					<button type="button" class="btn btn-outline-light shadow-lg" data-toggle="modal" data-target="#modalRegisterForm" style="padding-left: 70px;padding-right: 70px; border-radius: 20px;">SIGN UP</button>

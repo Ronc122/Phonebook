@@ -27,7 +27,11 @@
 					  			<input type="hidden" name="size" value="1000000">
 					  			<input type="file" name="image" value="" />
 			  				</div>
+<<<<<<< HEAD
 					  		<textarea type="text" name="bio" cols="30" rows="4" id="validationCustom01" required><?php echo $row['bio'];?></textarea>
+=======
+					  		<textarea type="text" name="bio" cols="30" rows="4" id="validationCustom01"><?php echo $row['bio'];?></textarea>
+>>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 						</div>
 					</div>
 					<div class="col-md-6 ml-auto">

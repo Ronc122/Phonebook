@@ -21,4 +21,8 @@
 				</li>
 			</ul>
 	</div>
+<<<<<<< HEAD
 </nav>
+=======
+</nav>
+>>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab

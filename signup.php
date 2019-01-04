@@ -63,15 +63,13 @@
 				</div>
 
 				<div class="text-center mt-4">
-
-	  		</form>
-	  		<div class="text-center mt-4">
-
 				<div class="modal-footer d-flex justify-content-center">
 		  			<button type="button" class="btn btn-outline-danger" data-dismiss="modal">&times&nbspCancel</button>
 		  			<button class="btn btn-danger" name="register" type="submit">Register&nbsp<img src="package/build/svg/arrow-right.svg"/></button>
 				</div>
 	  		</div>
+	  		</form>
+	  		
 
 	  		</form>
 

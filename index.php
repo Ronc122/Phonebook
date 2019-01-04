@@ -38,6 +38,7 @@
 					<!-- Link to Signup PHP file -->
 				  	<?php include('signup.php');?>
 				</div>
+				
 				<div class="button">
 					<button type="button" class="btn btn-light mt-3 shadow-lg" data-toggle="modal" data-target="#modalLoginAvatar" style="padding-left: 77px;padding-right: 77px; border-radius: 20px; color:red">LOGIN</button>
 					<!-- Link to login PHP file -->

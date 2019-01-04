@@ -58,12 +58,12 @@
 		  array_push($error, "The Password did not match"); 
 		}
 		if (count($error) == 0){
-		$password = md5($password1);//encrypt password
-		$sql = "INSERT INTO account (username, email, password) VALUES ('$username','$email','$password')";
-		mysqli_query($db, $sql);
-		$_SESSION['username'] = $username;
-		$_SESSION['success'] = "You are successfully registered!";
-		header('location: home.php?username='.$username.'');// to mainpage
+			$password = md5($password1);//encrypt password
+			$sql = "INSERT INTO account (username, email, password) VALUES ('$username','$email','$password')";
+			mysqli_query($db, $sql);
+			$_SESSION['username'] = $username;
+			$_SESSION['success'] = "You are successfully registered!";
+			header('location: home.php?username='.$username.'');// to mainpage
 		}
 	}
 

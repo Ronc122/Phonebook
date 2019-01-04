@@ -9,26 +9,9 @@
 	  		<div class="modal-header text-center" style="background-color:#F44336;">
 				<h2 class="modal-title w-100 font-weight-bold text-light">Sign up here!</h2>  
 	  		</div>
-<<<<<<< HEAD
-
 	  		<form class="mt-4" method="post" action="">
-				<div class="modal-body mx-3">
-
-=======
-<<<<<<< HEAD
-	  		<form class="mt-4" method="post" action="">
-				<div class="modal-body mx-3">
-=======
->>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab
-	  		<form class="mt-4" method="post" action="signup.php">
 				<div class="modal-body mx-3">
 					<!-- Error will show here -->
-		  			<?php include('error.php');?>
-<<<<<<< HEAD
-
-=======
->>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
->>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab
 		  			<div class="md-form mt-2 mb-3">
 						<div class="input-group mb-2">
 			  				<div class="input-group-prepend">
@@ -72,34 +55,13 @@
 		  				</div>
 					</div>
 				</div>
-<<<<<<< HEAD
-
 				<div class="text-center mt-4">
-=======
-<<<<<<< HEAD
-				<div class="text-center mt-4">
-=======
-	  		</form>
-	  		<div class="text-center mt-4">
->>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
->>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab
-				<div class="modal-footer d-flex justify-content-center">
-		  			<button type="button" class="btn btn-outline-danger" data-dismiss="modal">&times&nbspCancel</button>
-		  			<button class="btn btn-danger" name="register" type="submit">Register&nbsp<img src="package/build/svg/arrow-right.svg"/></button>
-				</div>
-	  		</div>
-<<<<<<< HEAD
-	  		</form>
-	  		
-
-	  		</form>
-
-=======
-<<<<<<< HEAD
-	  		</form>
-=======
->>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
->>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab
+					<div class="modal-footer d-flex justify-content-center">
+		  				<button type="button" class="btn btn-outline-danger" data-dismiss="modal">&times&nbspCancel</button>
+		  				<button class="btn btn-danger" name="register" type="submit">Register&nbsp<img src="package/build/svg/arrow-right.svg"/></button>
+		  			</div>
+		  		</div>	
+	  		</form>	
 		</div>
-  	</div>
+	</div>
 </div>

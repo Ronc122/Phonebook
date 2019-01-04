@@ -1,21 +1,8 @@
 <?php 
 	session_start();
-<<<<<<< HEAD
-	$dbserver	= 'lec2-23-21-86-22.compute-1.amazonaws.com';
-	$dbusername = 'wiylemuttjvvls';
-	$dbpassword	= '818bc577477f87ddb348548bf02da71b2353e3e6fa97d7f60ca6b74936caa3a2';
-	$dbDatabase	= 'd8p7drrfl270pk';
-=======
 	$dbserver	= 'localhost';
-<<<<<<< HEAD
-	$dbusername = 'user';
-	$dbpassword	= 'userpassword';
-=======
 	$dbusername = 'root';
-	$dbpassword	= '';
->>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 	$dbDatabase	= 'Phonebook';
->>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab
 	$error      = array();
 	$invalid	= array();
 	$msg 		= "";
@@ -70,21 +57,12 @@
 		  array_push($error, "The Password did not match"); 
 		}
 		if (count($error) == 0){
-<<<<<<< HEAD
-			$password = md5($password1);//encrypt password
-			$sql = "INSERT INTO account (username, email, password) VALUES ('$username','$email','$password')";
-			mysqli_query($db, $sql);
-			$_SESSION['username'] = $username;
-			$_SESSION['success'] = "You are successfully registered!";
-			header('location: home.php?username='.$username.'');// to mainpage
-=======
 		$password = md5($password1);//encrypt password
 		$sql = "INSERT INTO account (username, email, password) VALUES ('$username','$email','$password')";
 		mysqli_query($db, $sql);
 		$_SESSION['username'] = $username;
 		$_SESSION['success'] = "You are successfully registered!";
 		header('location: home.php?username='.$username.'');// to mainpage
->>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab
 		}
 	}
 
@@ -123,13 +101,6 @@
 		$result   = mysqli_query($db, $sql);
 		$row  =   mysqli_fetch_array($result);
   	}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  
-=======
->>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
->>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab
 
   	/* Updating existing data from database */
   	if(isset($_POST['update'])){

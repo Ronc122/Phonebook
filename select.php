@@ -1,18 +1,9 @@
 <!-- Query for showing data from database -->
 <?php  
 	if(isset($_POST["id"])){  
-		$output = '';  
-<<<<<<< HEAD
+		$output = ''; 
 
-		$db = mysqli_connect("ec2-23-21-86-22.compute-1.amazonaws.com", "wiylemuttjvvls", "818bc577477f87ddb348548bf02da71b2353e3e6fa97d7f60ca6b74936caa3a2", "d8p7drrfl270pk");  
-
-=======
-<<<<<<< HEAD
 		$db = mysqli_connect("localhost", "user", "userpassword", "Phonebook");  
-=======
-		$db = mysqli_connect("localhost", "root", "", "Phonebook");  
->>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
->>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab
 	  	$query = "SELECT * FROM users_account WHERE id = '".$_POST["id"]."'";  
 	  	$result = mysqli_query($db, $query);  
 

@@ -4,11 +4,10 @@
 	if(isset($_GET['id'])){ //Getting id number on the link
 		$id		= $_GET['id'];
 		/* connecting to the database */
-<<<<<<< HEAD
+
 		$connect = mysqli_connect("localhost", "user", "userpassword", "Phonebook");
-=======
+
 		$connect = mysqli_connect("localhost", "root", "", "Phonebook");
->>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 		/* Query for getting the username */
 		$sql 	= "SELECT username FROM users_account WHERE id = '$id'";
 		$result1 = mysqli_query($connect, $sql);

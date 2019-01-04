@@ -1,14 +1,9 @@
 <?php 
 	session_start();
-	$dbserver	= 'localhost';
-<<<<<<< HEAD
-	$dbusername = 'user';
-	$dbpassword	= 'userpassword';
-=======
-	$dbusername = 'root';
-	$dbpassword	= '';
->>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
-	$dbDatabase	= 'Phonebook';
+	$dbserver	= 'lec2-23-21-86-22.compute-1.amazonaws.com';
+	$dbusername = 'wiylemuttjvvls';
+	$dbpassword	= '818bc577477f87ddb348548bf02da71b2353e3e6fa97d7f60ca6b74936caa3a2';
+	$dbDatabase	= 'd8p7drrfl270pk';
 	$error      = array();
 	$invalid	= array();
 	$msg 		= "";
@@ -107,10 +102,6 @@
 		$result   = mysqli_query($db, $sql);
 		$row  =   mysqli_fetch_array($result);
   	}
-<<<<<<< HEAD
-  
-=======
->>>>>>> 27f6fa4ec86309cd6a32f227a9b81338b2b9ec05
 
   	/* Updating existing data from database */
   	if(isset($_POST['update'])){

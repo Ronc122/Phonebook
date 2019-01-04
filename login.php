@@ -59,20 +59,13 @@
 		margin-left: 100px;
 		width: 30%;
 		width: auto;
-
 		margin: 0px auto;
 		border: 1px solid #a94442;
 		color: #a94442;
 		background: #f2dede;
 		border-radius: 5px;
-
 		font-size:15px;
 		padding-top: 12px;
 		padding-bottom: -5px;  
-
-		font-size:10px;
-		padding-top: 12px;
-		padding-bottom: -5px;  
-
 	}
 </style>

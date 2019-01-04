@@ -1,6 +1,6 @@
 <!-- Link for connecting to database and other PHP query -->
 <?php include 'server.php';?>
-<?php echo "Hello Guys";?>
+
 <!DOCTYPE html>
 <html>
 	<head>

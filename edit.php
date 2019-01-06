@@ -7,94 +7,81 @@
 	<title>Phonebook</title>
 	<!-- Head Links in a separate file -->
 	<?php include 'template/header.php';?>
+	<style>
+		table tr{
+			margin-bottom: 20px;
+		}
+	</style>
 </head>
 <body>
+	<div class="grid">
 	<!-- Navigation Bar in a separate file -->
 	<?php include 'template/navbar.php'; ?>
-
-  	<section class="jumbotron">
 		<center>
+	<div class="main mt-3">
 		<div class="border border-dark w-75 h-100 bg-danger rounded">
 			<h2 class="text-black mt-3 mb-3">Updating the information of <strong class="text-light"><?php echo $row['firstname'].'&nbsp'.$row['lastname']; ?>.</strong></h2>
 
 			<!-- form for editing the data -->
-			<form class="p-4 border border-dark bg-light rounded" method="post" action="home.php?username=<?php echo $row['username']; ?>" enctype="multipart/form-data">
-		  		<div class="row">
-		  			<div class="col mr-auto" >
-		  				<div class="form-group">
-							<div class="col mb-3">
-				   				<?php echo "<img width='140' height='140' style='border:1px; border-radius:20px' src='images/".$row['image']."'>";?>
-					  			<input type="hidden" name="size" value="1000000">
-					  			<input type="file" name="image" value="" />
+			<form class="p-4 bg-light" method="post" action="home.php?username=<?php echo $row['username']; ?>" enctype="multipart/form-data">
+		  		<div class="row" style="padding-bottom: 50px;">
+		  			<div style="margin-left: 80px;">
+							<div class="col mb-2" style="border:1px solid; border-radius: 5px; padding: 5px">
+				   				<?php echo "<img width='240' height='240' style='border:1px;' src='images/".$row['image']."'>";?>
 			  				</div>
-
-					  		<textarea type="text" name="bio" cols="30" rows="4" id="validationCustom01" required><?php echo $row['bio'];?></textarea>
-
-					  		<textarea type="text" name="bio" cols="30" rows="4" id="validationCustom01"><?php echo $row['bio'];?></textarea>
-
-
-					  		<textarea type="text" name="bio" cols="30" rows="4" id="validationCustom01" required><?php echo $row['bio'];?></textarea>
-
-					  		<textarea type="text" name="bio" cols="30" rows="4" id="validationCustom01"><?php echo $row['bio'];?></textarea>
-
+					  		<textarea type="text" name="bio" cols="35" rows="4" style="border-radius: 5px;" required><?php echo $row['bio'];?></textarea>
 						</div>
-					</div>
-					<div class="col-md-6 ml-auto">
-						<div class="form-row">
-							<div class="col mb-3">
-		  						<label for="validationDefault01">First Name</label>
-		  						<input type="text" name="firstname" value="<?php echo $row['firstname'] ?>" class="form-control" placeholder="First Name">
-							</div>
-							<div class="col mb-3">
-		  						<label for="validationDefault02">Last Name</label>
-		  						<input type="text" name="lastname" value="<?php echo $row['lastname'] ?>"class="form-control" id="validationDefault02" placeholder="Last Name" required>
-							</div>
-	  					</div>
-						<div class="form-row">
-							<div class="col mb-3">
-			  					<label for="validationDefault01">Phone Number</label>
-			  					<input type="Number" name="number" value="<?php echo $row['number'] ?>" class="form-control" id="validationDefault01" placeholder="PhoneNumber" required>
-							</div>
-							<div class="col mb-3">
-			  					<label for="validationDefault02">Address</label>
-			  					<input type="text" name="address" value="<?php echo $row['address'] ?>" class="form-control" id="validationDefault02" placeholder="Address" required>
-							</div>
+					<input type="hidden" name="size" value="1000000">
+					<table style="margin-left:50px; width:50%; height:370px;">
+						<tr>
+							<td>Firstname :</td>
+							<td><input type="text" name="firstname" value="<?php echo $row['firstname'] ?>" class="form-control" placeholder="First Name"></td>
+						</tr>
+						<tr>
+							<td>Lastname :</td>
+							<td><input type="text" name="lastname" value="<?php echo $row['lastname'] ?>"class="form-control" placeholder="Last Name" required></td>
+						</tr>
+						<tr>
+							<td>Phone number :</td>
+							<td><input type="Number" name="number" value="<?php echo $row['number'] ?>" class="form-control" placeholder="PhoneNumber" required></td>
+						</tr>
+						<tr>
+							<td>Address :</td>
+							<td><input type="text" name="address" value="<?php echo $row['address'] ?>" class="form-control" placeholder="Address" required></td>
+						</tr>
+						<tr>
+							<td>City :</td>
+							<td><input type="text" name="city" value="<?php echo $row['city'] ?>" class="form-control" placeholder="Municipality/City" required></td>
+						</tr>
+						<tr>
+							<td>Zip Code :</td>
+							<td><input type="Number" name="zip" value="<?php echo $row['zip'] ?>" class="form-control" placeholder="ZipCode" required></td>
+						</tr>
+						<tr>
+							<td>Age :</td>
+							<td><input type="Number" name="age" value="<?php echo $row['age'] ?>" class="form-control" placeholder="ZipCode" required></td>
+						</tr>
+						<tr>
+							<td>Change Photo :</td>
+							<td><input type="file" name="image"></td>
+						</tr>
+
+					</table>
 						</div>
-						<div class="form-row">
-			   				<div class="col mb-3">
-			  					<label for="validationDefault03">City</label>
-			  					<div class="input-group">
-			  						<input type="text" name="city" value="<?php echo $row['city'] ?>" class="form-control" id="validationDefault01" placeholder="Municipality/City" required>
-								</div>
+						<div style="float:right; margin-top: -30px;">
+							<div class="row">
+			  					<input type="hidden" name="id" value="<?php echo $row['id'];?>">
+			  					<a href="home.php?username=<?php echo $row['username']; ?>" class="btn btn-info btn-danger mr-2">Back</a>
+			  					<button class="btn btn-success d-flex " name="update" type="submit">Update</button>
 		  					</div>
-							<div class="col mb-3">
-			  					<label for="validationDefault03">ZipCode</label>
-			  					<div class="input-group">
-			  						<input type="Number" name="zip" value="<?php echo $row['zip'] ?>" class="form-control"  id="validationDefault01" placeholder="ZipCode" required>
-								</div>
-							</div>
-							<div class="col mb-3">
-			  					<label for="validationDefault03">Age</label>
-			  					<div class="input-group">
-			  						<input type="Number" name="age" value="<?php echo $row['age'] ?>" class="form-control"  id="validationDefault01" placeholder="ZipCode" required>
-								</div>
-							</div>
-			
-						</div>
-						<div class="row" style="float: right;">
-			  				<input type="hidden" name="id" value="<?php echo $row['id'];?>">
-			  				<a href="home.php?username=<?php echo $row['username']; ?>" class="btn btn-info btn-danger mr-2">Back</a>
-			  				<button class="btn btn-success d-flex " name="update" type="submit">Update</button>
 		  				</div>
-					</div>
-				</div>
 			</form>
   		</div>
+  		</div>
 		</center>
-	</section>
 
 	<!-- Footer Link -->
 	<?php include 'template/footer.php'; ?>
-
+</div>
 </body>
 </html>

@@ -16,10 +16,28 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<!-- Internal CSS -->
 		<style>
+			.jumbotron{
+				background:none;
+			}
 	  		body::after{
 				content: "";
 				background-image: url("images/background.jpg");
 	  		}
+	  		.error{
+  				left: 0;
+  				right: 0;
+  				position: absolute;
+				margin-left: 100px;
+				width: 20%;
+				margin: 0px auto;
+				border: 1px solid #a94442;
+				color: #a94442;
+				background: #f2dede;
+				border-radius: 5px;
+				font-size:15px;
+				padding-top: 12px;
+				padding-bottom: -5px;  
+			}
 		</style>
 	</head>
 <body>

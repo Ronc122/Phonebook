@@ -49,20 +49,5 @@
 
 <!-- CSS for error -->
 <style>
-	.error{
-  		left: 0;
-  		right: 0;
-  		position: absolute;
-		margin-left: 100px;
-		width: auto;
-		margin: 0px auto;
-		border: 1px solid #a94442;
-		color: #a94442;
-		background: #f2dede;
-		border-radius: 5px;
-		font-size:15px;
-		padding-top: 12px;
-		padding-bottom: -5px;  
-
-	}
+	
 </style>

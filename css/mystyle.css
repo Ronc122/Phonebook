@@ -8,6 +8,7 @@ body{
   background-color: red;
 }
 body::after{
+  content: "";
   opacity: 0.3;
  	top: 0;
   left: 0;
@@ -19,9 +20,6 @@ body::after{
   display: flex;
   align-items: center;
  }
-.jumbotron{
-	background: none;
-}
 h1{
 	font-weight: 700;
 	margin: 0;

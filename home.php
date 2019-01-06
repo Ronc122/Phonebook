@@ -19,30 +19,22 @@
 	<?php include 'template/header.php';?>
 </head>
 <body>
+	<div class="grid">
 	<!-- Navigation Bar in a separate file -->
 	<?php include 'template/navbar.php'; ?>
-
-	<section class="jumbotron">
-		<div align="right">
-			<!-- Modal button for adding contacts -->
-			<button type="button" data-toggle="modal" data-target=".bd-example-modal-lg" style="position: absolute; margin-left:-90px ; border-radius:30px;" class="btn btn-warning"><img  src='images/add-user.png' width="40" height="30" /></button>
-			<?php include 'add.php';?>
-		</div>
-
-			<div class="container3 w-75 rounded border-dark" id="account_table" style="align-items:center; padding-top: 20px; margin: auto;">
-
-				<?php include 'alert.php'?>
-
-				<table class="table w-100 table-striped table-dark border-0" style="align-items: center; margin-right: auto;margin-left: auto;" method="post">
+		<div style="margin-top: 10px;" class="main">
+				<table class="table w-75 table-striped table-dark border-0" id="account_table" style="align-items: center; margin-right: auto;margin-left: auto;" method="post">
 					<thead>
 						<tr>
-							<th scope="row" colspan="2"><h4><strong>My Contacts</strong></h4></th>
-							<th scope="row"><input style="width:200px; float:right;" class="form-control" id="myInput" type="text" placeholder="Search.."></th>
+							<th scope="row" ><h4><strong>My Contacts</strong></h4></th>
+							<th scope="row"></th>
+							<?php include 'alert.php'?>
+							<th scope="row"><input class="form-control" id="myInput" type="text" placeholder="Search.."></th>
 						</tr>
 						<tr>
-							<th scope="col">Names</td>
-							<th scope="col">Phone Number</td>
-							<th scope="col">Action</td>
+							<th scope="col" class="column-text">Names</td>
+							<th scope="col" class="column-text">Phone Number</td>
+							<th scope="col" class="column-text">Action</td>
 						</tr>
 					</thead>
 					<tbody class="table-striped bg-light text-dark" id="myTable">
@@ -52,18 +44,18 @@
 								while($row = mysqli_fetch_assoc($result)){
 				  		?>
 						<tr>
-							<td><?php 
+							<td class="row-text"><?php 
 									echo $row['firstname'];
 									echo "&nbsp";
 									echo $row['lastname'];
 								?></td>
-							<td><?php 
+							<td class="row-text"><?php 
 									echo $row['number'];
 								?></td>
 							<td>
-								<a name="edit" title="Edit" style='font-size:12px; border-radius:12px : ' value="Edit" href="edit.php?id=<?php echo $row['id'];?>" class="btn btn-info btn-xs">Edit</a>
-								<input type="button" name="view" value="View" style='font-size:12px;' id="<?php echo $row['id'];?>" class="btn btn-success btn-xs view_data">
-								<input type="button" name="delete" title="Delete" value="Delete" style='font-size:12px;' data-id="<?php echo $row['id'];?>"  class="delete btn btn-danger btn-xs" data-toggle="#deleteModal" title="Delete">
+								<a name="edit" title="Edit" style='font-size:10px; border-radius:5px;padding:4px;' href="edit.php?id=<?php echo $row['id'];?>" class="btn btn-info btn-xs">Edit</a>
+								<input type="button" name="view" value="View" style='font-size:10px; border-radius:5px;padding:4px;' id="<?php echo $row['id'];?>" class="btn btn-success btn-xs view_data">
+								<input type="button" name="delete" title="Delete" value="Delete" style='font-size:10px; border-radius:5px;padding:4px;' data-id="<?php echo $row['id'];?>"  class="delete btn btn-danger btn-xs" data-toggle="#deleteModal" title="Delete">
 						</tr>
 						<?php
 								} 
@@ -75,7 +67,15 @@
 						}?>
 					</tbody>
 				</table>
-	</section>
+				<!-- Modal button for adding contacts -->
+				<div  align="right">
+			<button type="button" data-toggle="modal" data-target=".bd-example-modal-lg" style="position: absolute; margin-left:-90px ; border-radius:30px;" class="btn btn-warning"><img  src='images/add-user.png' width="40" height="30" /></button>
+			<?php include 'add.php';?>
+		</div>
+	</div>
+</div>
+
+<?php include('template/footer.php');?>
 	<!-- Script for filtering fethed data or searching data -->
 	<script>
 		$(document).ready(function(){
@@ -88,7 +88,6 @@
 		});
 	</script>
 	<!-- Footer Link -->
-	<?php include 'template/footer.php'; ?>
 </body>
 </html>
 
@@ -126,8 +125,6 @@
 		</div>  
 	</div>  
 </div>
-
-
 <script>
 	/* function for activating delete modal when click */
 	$(function(){

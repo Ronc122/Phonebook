@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+<nav class="navbar navbar-expand-lg navbar-light bg-danger" id="header">
 	<img src="images/phonebook.png" width="80" height="80" class="d-inline-block align-top" alt=""/>
-	<a class="navbar-brand text-light" href="index.php"><h1>Phonebook</h1></a>
+	<a class="navbar-brand text-light" href=""><h1>Phonebook</h1></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -21,8 +21,5 @@
 				</li>
 			</ul>
 	</div>
-<<<<<<< HEAD
 </nav>
-=======
-</nav>
->>>>>>> ed85adce22fe35bc6e7aabb586ef5d84fb0650ab
+

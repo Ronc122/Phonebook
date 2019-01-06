@@ -3,6 +3,7 @@
 	$dbserver	= 'localhost';
 	$dbusername = 'root';
 	$dbDatabase	= 'Phonebook';
+	$dbpassword = '';
 	$error      = array();
 	$invalid	= array();
 	$msg 		= "";

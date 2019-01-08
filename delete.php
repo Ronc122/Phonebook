@@ -5,12 +5,6 @@
 		$id		= $_GET['id'];
 		/* connecting to the database */
 
-
-		$connect = mysqli_connect("localhost", "user", "userpassword", "Phonebook");
-
-		$connect = mysqli_connect("localhost", "root", "", "Phonebook");
-		$connect = mysqli_connect("localhost", "user", "userpassword", "Phonebook");
-
 		$connect = mysqli_connect("localhost", "root", "", "Phonebook");
 		/* Query for getting the username */
 		$sql 	= "SELECT username FROM users_account WHERE id = '$id'";
